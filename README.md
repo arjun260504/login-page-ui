@@ -25,7 +25,7 @@ This project is focused on **frontend UI/UX development** and JavaScript form ha
    ## 🔐 Sample Login Credentials
    This project uses predefined sample credentials for demonstration purposes.
    **Email:** samplemail@gmail.com
-   **Password: ** Samplepass123@
+   Password: Samplepass123@
 
   Use the above credentials to successfully log in and view the success modal.
 
@@ -66,9 +66,7 @@ This project is intended to:
 - Demonstrate JavaScript validation logic
 - Learn Bootstrap components such as modals
 - Build clean and reusable interface layouts
-
-It is suitable for **internship submissions and learning purposes**.
-
+- 
 ---
 
 ## ⚠️ Disclaimer
