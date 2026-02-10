@@ -38,6 +38,14 @@ This project is focused on **frontend UI/UX development** and JavaScript form ha
 
 ---
 
+## Screenshots
+
+### Main Interface
+![Main Interface](screenshots/screenshot-home.png)
+
+### Successful Login
+![Track Preview-1](screenshots/screenshot-login-success-modal.png)
+
 ## 🛠️ How This Project Is Built
 
 ### Frontend Technologies
