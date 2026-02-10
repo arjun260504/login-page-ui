@@ -14,28 +14,35 @@
     rel="stylesheet"
   >
 
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="name-signature">Arjun © 2026</div>
+
   <div id="bgCarousel" class="carousel slide carousel-fade bg-carousel" data-bs-ride="carousel" data-bs-interval="5000">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="pexels-codioful-6984995.jpg" class="d-block w-100" alt="">
-    </div>
-    <div class="carousel-item">
-      <img src="pexels-anniroenkae-15578416.jpg" class="d-block w-100" alt="">
-    </div>
-    <div class="carousel-item">
-      <img src="pexels-paduret-4041750.jpg" class="d-block w-100" alt="">
-    </div>
-    <div class="carousel-item">
-      <img src="pexels-steve-1789968.jpg" class="d-block w-100" alt="">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="pexels-codioful-6984995.jpg" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="pexels-anniroenkae-15578416.jpg" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="pexels-paduret-4041750.jpg" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="pexels-steve-1789968.jpg" class="d-block w-100" alt="">
+      </div>
     </div>
   </div>
-</div>
 
-<div class="bg-overlay"></div>
+  <div class="bg-overlay"></div>
 
   <div class="login-wrapper">
     <div class="login-card">
@@ -46,26 +53,39 @@
         <div class="mb-3">
           <label class="form-label text-white">Email</label>
           <input
-            type="text"
+            type="email"
             id="email"
             class="form-control"
             placeholder="Enter email"
+            autocomplete="username"
             onblur="validateEmpty(this)"
             oninput="clearError(this)"
           >
           <small class="error-text">Email is required</small>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 position-relative">
           <label class="form-label text-white">Password</label>
           <input
             type="password"
             id="password"
-            class="form-control"
+            class="form-control pe-5"
             placeholder="Enter password"
+            autocomplete="current-password"
             onblur="validateEmpty(this)"
             oninput="clearError(this)"
+            onpaste="return false"
           >
+
+          <i
+            class="bi bi-eye-slash password-toggle"
+            tabindex="0"
+            role="button"
+            aria-label="Toggle password visibility"
+            onclick="togglePassword()"
+            onkeydown="if(event.key==='Enter') togglePassword()"
+          ></i>
+
           <small class="error-text">Password is required</small>
         </div>
 
@@ -96,7 +116,6 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
   <script src="script.js"></script>
 
 </body>
