@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="name-signature">Arjun © 2026</div>
+  <div id="bgCarousel" class="carousel slide carousel-fade bg-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pexels-codioful-6984995.jpg" class="d-block w-100" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="pexels-anniroenkae-15578416.jpg" class="d-block w-100" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="pexels-paduret-4041750.jpg" class="d-block w-100" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="pexels-steve-1789968.jpg" class="d-block w-100" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="bg-overlay"></div>
+
+  <div class="login-wrapper">
+    <div class="login-card">
+      <h3 class="text-center mb-4 text-white">Login</h3>
+
+      <form onsubmit="return validateForm()">
+
+        <div class="mb-3">
+          <label class="form-label text-white">Email</label>
+          <input
+            type="text"
+            id="email"
+            class="form-control"
+            placeholder="Enter email"
+            onblur="validateEmpty(this)"
+            oninput="clearError(this)"
+          >
+          <small class="error-text">Email is required</small>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label text-white">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            placeholder="Enter password"
+            onblur="validateEmpty(this)"
+            oninput="clearError(this)"
+          >
+          <small class="error-text">Password is required</small>
+        </div>
+
+        <button type="submit" class="btn btn-warning w-100">
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal fade" id="successModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content glass-modal rounded-4">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Login Successful</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Welcome! You have logged in successfully.</p>
+        </div>
+        <div class="modal-footer border-0">
+          <button class="btn btn-warning" onclick="location.reload()">
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
