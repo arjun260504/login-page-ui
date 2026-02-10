@@ -34,7 +34,6 @@ html, body {
   pointer-events: none;
 }
 
-
 .login-wrapper {
   position: relative;
   z-index: 2;
@@ -60,7 +59,7 @@ html, body {
 }
 
 .form-control:focus {
-  box-shadow: none;
+  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.25);
   border: 2px solid #ffc107;
 }
 
@@ -73,6 +72,20 @@ html, body {
   color: #f87171;
   font-size: 0.8rem;
   margin-top: 4px;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 40px;
+  right: 14px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1;
+}
+
+.password-toggle:hover {
+  color: #000;
 }
 
 .btn-warning {
